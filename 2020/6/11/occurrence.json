@@ -1,0 +1,264 @@
+{
+    "data": {
+        "e2Id": "OC-0000000000000008",
+        "version": "0.1",
+        "type": "OC",
+        "status": "OPEN",
+        "responsibleEntityId": 1,
+        "reportingEntityId": 1,
+        "relatedReports": [],
+        "sharedEntitiesId": null,
+        "rowsTaxCodes": {
+            "TaxonomyVersion": "4.1.0.7",
+            "TaxonomyName": "ECCAIRS Aviation",
+            "24": {
+                "ATTRIBUTES": {
+                    "19": "ECCAIRS Aviation",
+                    "440": "Malmø",
+                    "451": 98,
+                    "452": "16,,\"",
+                    "430": [
+                        23,
+                        2
+                    ],
+                    "431": 300,
+                    "453": 1,
+                    "454": {
+                        "AdditionalText": "",
+                        "AdditionalTextEncoding": "xs:string",
+                        "content": 228
+                    },
+                    "432": 98,
+                    "433": "2017-01-25",
+                    "477": "2017-01-25",
+                    "455": 2,
+                    "434": "2017-01-30T17:33:01",
+                    "478": "07:15:00",
+                    "456": 2,
+                    "435": "2019-09-02T09:33:35",
+                    "446": "leo",
+                    "457": "08:15:00",
+                    "601": "Aircraft overspeed due to tail wind",
+                    "448": 97,
+                    "606": 2,
+                    "20": "4.1.0.7"
+                },
+                "ENTITIES": {
+                    "22": {
+                        "ATTRIBUTES": {
+                            "424": 16,
+                            "425": {
+                                "EncodedText": {
+                                    "xmlns": "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd",
+                                    "content": "e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcZGVmbGFuZzEwNDB7XGZvbnR0Ymx7XGYwXGZzd2lzc1xmY2hhcnNldDAgVGFob21hO319DQpcdmlld2tpbmQ0XHVjMVxwYXJkXGYwXGZzMjggRHVyaW5nIGZpbmFsIGFwcHJvYWNoIDE1S1QgdGFpbCB3aW5kIGFuZCBtaXNtYW5hZ2luZyBzcGVlZCBzZWxlY3Rpb24gbGVkIHRvIGZsYXAgb3ZlcnNwZWVkXGZzMjRccGFyDQp9DQo="
+                                }
+                            }
+                        }
+                    },
+                    "1": {
+                        "ATTRIBUTES": {
+                            "5": {
+                                "AdditionalText": "",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 191095
+                            },
+                            "7": 6,
+                            "10": 1
+                        }
+                    },
+                    "46": {
+                        "ATTRIBUTES": {
+                            "794": "AR181196473",
+                            "732": {
+                                "AdditionalText": "",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 2133
+                            },
+                            "729": "2017-01-30"
+                        }
+                    },
+                    "14": [
+                        {
+                            "ATTRIBUTES": {
+                                "390": 99010366,
+                                "391": 10602
+                            },
+                            "ID": "ID7535FC04CE564624BCE411EF845B452F",
+                            "ENTITIES": {
+                                "12": {
+                                    "ATTRIBUTES": {
+                                        "386": 9300,
+                                        "488": 52020400
+                                    },
+                                    "ID": "ID4415BFBDB4744337B7DA8226418AC50D"
+                                }
+                            }
+                        },
+                        {
+                            "ATTRIBUTES": {
+                                "390": 2010600,
+                                "391": 990918
+                            },
+                            "ID": "IDC95F070E82064C90A58E8F397C8EE7D5",
+                            "ENTITIES": {
+                                "12": {
+                                    "ATTRIBUTES": {
+                                        "386": 6720,
+                                        "488": 12231200
+                                    },
+                                    "ID": "ID99D30C195D0844E2B9986D4CB43A47DE"
+                                }
+                            }
+                        }
+                    ],
+                    "4": {
+                        "ATTRIBUTES": {
+                            "22": {
+                                "Unit": "ft",
+                                "content": 2500
+                            },
+                            "44": 1,
+                            "29": 2,
+                            "175": {
+                                "Unit": "kg",
+                                "content": 78999
+                            },
+                            "297": 3,
+                            "232": 5,
+                            "213": 2,
+                            "214": 5,
+                            "313": 2,
+                            "215": {
+                                "AdditionalText": "",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 1790030
+                            },
+                            "117": 1,
+                            "118": 2,
+                            "657": 39048,
+                            "637": 1,
+                            "319": 4,
+                            "638": 1,
+                            "32": 17,
+                            "54": "NAX4025",
+                            "57": 6,
+                            "79": 1,
+                            "281": 179,
+                            "120": "DY4025",
+                            "121": 6,
+                            "166": 6,
+                            "387": {
+                                "AdditionalText": "8JP",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 4496
+                            },
+                            "244": "LN-DYT",
+                            "167": {
+                                "AdditionalText": "",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 191141
+                            },
+                            "327": 2011,
+                            "228": {
+                                "AdditionalText": "",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 191095
+                            },
+                            "209": 2,
+                            "64": 1
+                        },
+                        "LINKS": {
+                            "14": {
+                                "REF": "ID7535FC04CE564624BCE411EF845B452F"
+                            }
+                        },
+                        "ID": "IDB8EF9A549C014807B444F4A686BF1A65",
+                        "ENTITIES": {
+                            "22": {
+                                "ATTRIBUTES": {
+                                    "424": 16,
+                                    "425": {
+                                        "EncodedText": {
+                                            "xmlns": "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd",
+                                            "content": "e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcZGVmbGFuZzEwNDB7XGZvbnR0Ymx7XGYwXGZzd2lzc1xmY2hhcnNldDAgVGFob21hO319DQpcdmlld2tpbmQ0XHVjMVxwYXJkXGYwXGZzMjggUnd5IDE3IGFuZCB3ZSBvYnNlcnZlZCB0YWlsd2luZCBvZiBhYm91dCAxNWt0IG9uIGludGVyY2VwdC4gRkw1IGFuZCBJIHdhcyB0YWxraW5nIHRvIHRoZSB0d3Igd2hlbiBGTyBhc2tlZCBmb3IgRkwxMCBhbmQgSSBoYWQgYSBtdWNoIHRvIHF1aWNrIGxvb2sgYXQgdGhlIHNwZWVkIGFuZCBzZWxlY3RlZCBpdC4gQSBkdWFsLXBpbG90LW1lc3N1cCwgaWYgdGhlcmUgaXMgc3VjaCBhbiBleHByZXNzaW9uLiBUZWMuIHdhcyBrYWxsZWQgb3V0IGF0IE1NWCBhbmQgYWZ0ZXIgMjBtbiB0aGUgZmxhcHMgd2VyZSBpbnNwZWN0ZWQgYW5kIHRlY2xvZyBzaWduZWQgb3V0IGFuZCB3ZSBkZXBhcnRlZCBvbiB0aW1lLiBMZXNzb24gbGVhcm5lZC4gUmlzayBzY29yZTo0XHBhcg0KXHBhcg0KXHBhcg0KXHBhcg0KXGZzMjRccGFyDQp9DQo="
+                                        }
+                                    }
+                                }
+                            },
+                            "13": {
+                                "ATTRIBUTES": {
+                                    "387": {
+                                        "AdditionalText": "CFM56-7B26/3",
+                                        "AdditionalTextEncoding": "xs:string",
+                                        "content": 6328
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "53": {
+                        "ATTRIBUTES": {
+                            "495": {
+                                "AdditionalText": "NF - 2007",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 9819
+                            },
+                            "476": 2,
+                            "447": {
+                                "AdditionalText": "NORWEGIAN AIR SHUTTLE ASA",
+                                "AdditionalTextEncoding": "xs:string",
+                                "content": 6133
+                            },
+                            "800": 1,
+                            "801": "2017-01-30",
+                            "438": "AR181196473"
+                        }
+                    },
+                    "21": [
+                        {
+                            "ATTRIBUTES": {
+                                "421": "CAA-N AVI PROD\\LEO@LT",
+                                "422": "2017-01-30T17:34:24"
+                            }
+                        },
+                        {
+                            "ATTRIBUTES": {
+                                "421": "PRO 5\\NOCAA",
+                                "422": "2017-10-12T00:39:57",
+                                "423": {
+                                    "EncodedText": {
+                                        "xmlns": "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd",
+                                        "content": "RGF0YSBjb252ZXJ0ZWQgZnJvbSB2LjMuNC4wLjIgdG8gdi40LjEuMC4zLg=="
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "ATTRIBUTES": {
+                                "421": "PRO 5\\JRCADMIN",
+                                "422": "2019-09-02T09:33:35",
+                                "423": {
+                                    "EncodedText": {
+                                        "xmlns": "http://eccairsportal.jrc.ec.europa.eu/ECCAIRS5_dataTypes.xsd",
+                                        "content": "RGF0YSBjb252ZXJ0ZWQgZnJvbSB2LjQuMS4wLjMgdG8gdi40LjEuMC43Lg=="
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "Version": "1.0.0.0",
+            "Domain": ""
+        },
+        "rowsLanguage": null,
+        "updated": false,
+        "blocked": false,
+        "creationUser": "eccairs",
+        "creationDate": "08/06/2020 07:10:30",
+        "lastModificationUser": "eccairs",
+        "lastModificationDate": "08/06/2020 07:10:30"
+    },
+    "errorDetails": "",
+    "returnCode": 1
+}
