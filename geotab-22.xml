@@ -1,0 +1,568 @@
+
+ 
+  
+ 
+  
+ 
+  
+________________________________________
+ 
+  
+ 
+  
+ 
+  
+ 
+Segolene Leaune
+16:19 (hace 6 horas)
+para mí
+ 
+   
+Traducir mensaje
+Desactivar para: inglés
+Hi Manuel,
+ 
+I hope this email finds you well.
+ 
+Sorry I haven't been able to send you the challenges before.
+ 
+Please find below the information regarding the first challenge:
+El primer reto consiste en realizar el tutorial https://dev.to/ibaca/modern-gwt-first-steps-509k, es un tutorial sencillo que propone una serie de pasos para empezar un proyecto GWT. Es importante entender bien cada uno de los pasos, puede parecer sencillo pero hay muchos conceptos bastante complejos que se deben controlar. Importante la limpieza, uso de Git y del IDE. Subir a un repositorio privado github con nombre “ApellidosNombre-Intendia-Challenge” en un único commit en el branch “master”. Añade el usuario @ibaca como colaborador.
+ 
+We are expecting this one to be done at the latest by Monday 24th at 8:00 am.
+ 
+Do not hesitate to contact me should you have any questions.
+ 
+Good luck!
+ 
+Kind regards,
+Segolene
+ 
+Ségolène Leaune
+Geotab
+Talent Acquisition Specialist
+ 
+Visit           www.geotab.com 
+Twitter | Facebook | YouTube | LinkedIn
+ 
+Celebrating 20 years of
+ 
+driving innovation.
+ 
+  
+ 
+  
+ 
+  
+________________________________________
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+https://dev.to/ibaca/modern-gwt-first-steps-509k
+ 
+@ibaca 
+ 
+Subir a un repositorio privado github con nombre “ApellidosNombre-Intendia-Challenge” en un único commit en el branch “master”. 
+ 
+YanezTousManuel-Intendia-Challenge
+ 
+  
+ 
+  
+ 
+  
+________________________________________
+ 
+  
+ 
+  
+ 
+  
+ 
+https://dev.to/ibaca/modern-gwt-first-steps-509k
+ 
+mvn archetype:generate \
+    -DarchetypeRepository=https://repo.maven.apache.org/maven2 \
+    -DarchetypeGroupId=org.apache.maven.archetypes \
+    -DarchetypeArtifactId=maven-archetype-quickstart \
+    -DarchetypeVersion=1.4 -DinteractiveMode=false \
+    -DgroupId=me -DartifactId=hello-app -Dversion=HEAD-SNAPSHOT
+ 
+  
+ 
+  
+ 
+  
+ 
+1' problema: 
+al poner eso en msdos, solo pilla la 1' linea, le falta el archetype, y devuelve esto
+ 
+  
+ 
+  
+ 
+  
+ 
+...
+2787: remote -> xyz.luan.generator:xyz-gae-generator (-)
+2788: remote -> xyz.luan.generator:xyz-generator (-)
+2789: remote -> za.co.absa.hyperdrive:component-archetype (-)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 1667:     -DarchetypeRepository=https://repo.maven.apache.org/maven2
+    -DarchetypeGroupId=org.apache.maven.archetypes
+    -DarchetypeArtifactId=maven-archetype-quickstart
+    -DarchetypeVersion=1.4 -DinteractiveMode=false
+    -DgroupId=me -DartifactId=hello-app -Dversion=HEAD-SNAPSHOT
+Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : Choose archetype:
+   Your filter doesn't match any archetype (hint: enter to return to initial list)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): :  
+ 
+  
+ 
+  
+ 
+  
+ 
+-> solucion ->
+ 
+  
+ 
+mvn archetype:generate    -DarchetypeRepository=https://repo.maven.apache.org/maven2     -DarchetypeGroupId=org.apache.maven.archetypes     -DarchetypeArtifactId=maven-archetype-quickstart     -DarchetypeVersion=1.4 -DinteractiveMode=false     -DgroupId=me -DartifactId=hello-app -Dversion=HEAD-SNAPSHOT      
+ 
+  
+ 
+  
+ 
+  
+ 
+el puto maven ha hecho un puto hello world, con junit
+ 
+  
+ 
+mvn verify
+ 
+  
+ 
+me costo un poco abrirlo con el intellij
+no pillaba el maven por si solo, y creaba 2 proyectos, src y test
+al final lo pillo
+el truco es saber que no lo pilla automaticamente, hay que indicarle al intellij que es un proyecto maven, entonces si que se lo traga de puta madre
+con java 12 ( no 11 [ en el project setings 12, en pom 11, que es el bueno, el que prevalece ] )
+ 
+  
+ 
+  
+ 
+  
+ 
+2' problema :
+cuando meti el gwt en el maven no lo pillaba
+ 
+-> solucion ->
+cerrar proyecto, y abrirlo
+sale una ventanita con una m "load maven changes"
+pincharla, para que se baje esos jar s
+ 
+( con esto tambien estuve un ratito
+mire en el repositorio de maven
+mire la versiones en git del proyecto
+pero nada )
+ 
+  
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+  
+ 
+ 
+ 
+y por fin, cuando voy a hacer el package me dice esto :
+ 
+
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+  
+ 
+ 
+C:\manu\prog\gwt\a25\hello-app>mvn package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------------< me:hello-app >----------------------------
+[INFO] Building hello-app HEAD-SNAPSHOT
+[INFO] ------------------------------[ gwt-app ]-------------------------------
+[INFO]
+[INFO] --- gwt-maven-plugin:1.0.0:enforce-encoding (default-enforce-encoding) @ hello-app ---
+[INFO]
+[INFO] --- gwt-maven-plugin:1.0.0:add-super-sources (default-add-super-sources) @ hello-app ---
+[INFO]
+[INFO] --- gwt-maven-plugin:1.0.0:add-test-super-sources (default-add-test-super-sources) @ hello-app ---
+[INFO]
+[INFO] --- gwt-maven-plugin:1.0.0:generate-module (default-generate-module) @ hello-app ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ hello-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\manu\prog\gwt\a25\hello-app\src\main\resources
+[INFO] skip non existing resourceDirectory C:\manu\prog\gwt\a25\hello-app\src\main\super
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ hello-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\manu\prog\gwt\a25\hello-app\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ hello-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\manu\prog\gwt\a25\hello-app\src\test\resources
+[INFO] skip non existing resourceDirectory C:\manu\prog\gwt\a25\hello-app\src\test\super
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ hello-app ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\manu\prog\gwt\a25\hello-app\target\test-classes
+[INFO]
+[INFO] --- gwt-maven-plugin:1.0.0:test (default-test) @ hello-app ---
+[INFO]
+[INFO] --- gwt-maven-plugin:1.0.0:compile (default-compile) @ hello-app ---
+[WARNING] Source level must be one of [auto, 1.8, 1.9, 1.10, 1.11].
+[WARNING] Google Web Toolkit 2.9.0
+[WARNING] Compiler [-logLevel (ERROR|WARN|INFO|TRACE|DEBUG|SPAM|ALL)] [-workDir dir] [-X[no]closureFormattedOutput] [-[no]compileReport] [-X[no]checkCasts] [-X[no]classMetadata] [-[no]draftCompile] [-[no]checkAssertions] [-XfragmentCount numFragments] [-XfragmentMerge numFragments] [-gen dir] [-[no]generateJsInteropExports] [-includeJsInteropExports/excludeJsInteropExports regex] [-XmethodNameDisplayMode (NONE|ONLY_METHOD_NAME|ABBREVIATED|FULL)] [-Xnamespace (NONE|PACKAGE)] [-optimize level] [-[no]saveSource] [-setProperty name=value,value...] [-style (DETAILED|OBFUSCATED|PRETTY)] [-[no]failOnError] [-[no]validateOnly] [-sourceLevel [auto, 1.8, 1.9, 1.10, 1.11]] [-localWorkers count] [-[no]incremental] [-war dir] [-deploy dir] [-extra dir] [-saveSourceOutput dir] module[s]
+[WARNING]
+[WARNING] where
+[WARNING]   -logLevel                                         The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM or ALL (defaults to INFO)
+[WARNING]   -workDir                                          The compiler's working directory for internal use (must be writeable; defaults to a system temp dir)
+[WARNING]   -X[no]closureFormattedOutput                      EXPERIMENTAL: Enables Javascript output suitable for post-compilation by Closure Compiler (defaults to OFF)
+[WARNING]   -[no]compileReport                                Compile a report that tells the "Story of Your Compile". (defaults to OFF)
+[WARNING]   -X[no]checkCasts                                  EXPERIMENTAL: DEPRECATED: use jre.checks.checkLevel instead. (defaults to OFF)
+[WARNING]   -X[no]classMetadata                               EXPERIMENTAL: Include metadata for some java.lang.Class methods (e.g. getName()). (defaults to ON)
+[WARNING]   -[no]draftCompile                                 Compile quickly with minimal optimizations. (defaults to OFF)
+[WARNING]   -[no]checkAssertions                              Include assert statements in compiled output. (defaults to OFF)
+[WARNING]   -XfragmentCount                                   EXPERIMENTAL: Limits of number of fragments using a code splitter that merges split points.
+[WARNING]   -XfragmentMerge                                   DEPRECATED (use -XfragmentCount instead): Enables Fragment merging code splitter.
+[WARNING]   -gen                                              Debugging: causes normally-transient generated types to be saved in the specified directory
+[WARNING]   -[no]generateJsInteropExports                     Generate exports for JsInterop purposes. If no -includeJsInteropExport/-excludeJsInteropExport provided, generates all exports. (defaults to OFF)
+[WARNING]   -includeJsInteropExports/excludeJsInteropExports  Include/exclude members and classes while generating JsInterop exports. Flag could be set multiple times to expand the pattern. (The flag has only effect if exporting is enabled via -generateJsInteropExports)
+[WARNING]   -XmethodNameDisplayMode                           EXPERIMENTAL: Specifies method display name mode for chrome devtools: NONE, ONLY_METHOD_NAME, ABBREVIATED or FULL (defaults to NONE)
+[WARNING]   -Xnamespace                                       Puts most JavaScript globals into namespaces. Default: PACKAGE for -draftCompile, otherwise NONE
+[WARNING]   -optimize                                         Sets the optimization level used by the compiler.  0=none 9=maximum.
+[WARNING]   -[no]saveSource                                   Enables saving source code needed by debuggers. Also see -debugDir. (defaults to OFF)
+[WARNING]   -setProperty                                      Set the values of a property in the form of propertyName=value1[,value2...].
+[WARNING]   -style                                            Script output style: DETAILED, OBFUSCATED or PRETTY (defaults to OBFUSCATED)
+[WARNING]   -[no]failOnError                                  Fail compilation if any input file contains an error. (defaults to OFF)
+[WARNING]   -[no]validateOnly                                 Validate all source code, but do not compile. (defaults to OFF)
+[WARNING]   -sourceLevel                                      Specifies Java source level (defaults to 1.8)
+[WARNING]   -localWorkers                                     The number of local workers to use when compiling permutations
+[WARNING]   -[no]incremental                                  Compiles faster by reusing data from the previous compile. (defaults to OFF)
+[WARNING]   -war                                              The directory into which deployable output files will be written (defaults to 'war')
+[WARNING]   -deploy                                           The directory into which deployable but not servable output files will be written (defaults to 'WEB-INF/deploy' under the -war directory/jar, and may be the same as the -extra directory/jar)
+[WARNING]   -extra                                            The directory into which extra files, not intended for deployment, will be written
+[WARNING]   -saveSourceOutput                                 Overrides where source files useful to debuggers will be written. Default: saved with extras.
+[WARNING] and
+[WARNING]   module[s]                                         Specifies the name(s) of the module(s) to compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.730 s
+[INFO] Finished at: 2020-08-18T00:15:41+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal net.ltgt.gwt.maven:gwt-maven-plugin:1.0.0:compile (default-compile) on project hello-app: GWT exited with status 1 -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+C:\manu\prog\gwt\a25\hello-app>
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+estuve horas peleandome con esto
+ 
+ 
+ 
+busque otro tutorial, venia con eclipse :
+ 
+ 
+https://www.tutorialspoint.com/gwt/gwt_create_application.htm
+ 
+ 
+ 
+ 
+que es parecido al tutorial de referencia :
+ 
+http://www.gwtproject.org/usingeclipse.html
+ 
+ 
+ 
+y por fin vi la luz
+consegui que compilara
+con lo cual, genera las paginas
+ 
+pero estos tutoriales tienen servidor
+y con eso perdi tambien algun tiempo
+ 
+tuve que usar el firefox, y no el portable, sino la version 24 del firefox no portable
+instalar el plugin de gwt, y listo, funcionaba todo que te cagas
+ 
+ 
+ 
+http://127.0.0.1:8888/Gwt31.html?gwt.codesvr=127.0.0.1:9997
+file:///C:/Users/manue/eclipse-workspace/gwt31/war/Gwt31.html
+ 
+ 
+los ficheros del intellij los tengo aqui :
+ 
+file:///C:/manu/prog/gwt/a25/hello-app/target/hello-app-HEAD-SNAPSHOT/me.App/index.html
+ 
+ 
+ 
+ 
+  
+ 
+ 
+
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+cuando ya lo hice con el eclipse, me volvi al intellij, y fue super facil
+ 
+la solucion es simplemente poner esto en el pom :
+ 
+ 
+ 
+ 
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+ 
+ 
+yo tenia 1.7 en vez de la 11
+da igual si cambias la preferencias, lo que manda es el pom, no las preferencias del proyecto
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+________________________________________
+ 
